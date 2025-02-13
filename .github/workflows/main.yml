@@ -9,5 +9,7 @@ jobs:
 
     steps:
       - run: echo "this is running in ${{runner.os}} in github"
-      
+      - name: checkout source
+        uses: actions/checkout@v4.2.2
+      - run: echo "this repo is ${{github.repository}}.."
     
