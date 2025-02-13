@@ -1,0 +1,13 @@
+name: test github action
+
+on: push
+
+jobs:
+  github_action_test_job1:
+    name: github action test job1
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo "this is running in ${{runner.os}} in github"
+      
+    
